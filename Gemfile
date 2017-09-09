@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem 'dotenv-rails', groups: [:development, :test]
+
 gem 'graphql'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
