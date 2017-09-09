@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170909202011) do
+ActiveRecord::Schema.define(version: 20170909204907) do
 
   create_table "users", force: :cascade do |t|
     t.string "first_name"
@@ -18,6 +18,10 @@ ActiveRecord::Schema.define(version: 20170909202011) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "profile_image_file_name"
+    t.string "profile_image_content_type"
+    t.integer "profile_image_file_size"
+    t.datetime "profile_image_updated_at"
   end
 
 end

@@ -6,4 +6,9 @@ Types::UserType = GraphQL::ObjectType.define do
   field :firstName, types.String, property: :first_name
   field :lastName, types.String, property: :last_name
   field :email, types.String
+  field :profileImageUrl, types.String do
+    resolve ->(user, _args, _ctx) {
+      user.profile_image.url
+    }
+  end
 end
